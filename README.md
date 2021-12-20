@@ -6,3 +6,5 @@ My dataset has been sourced from Kaggle, data was published by the John Hopkins 
 Link to dataset: https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_global_deaths.csv 
 
 Tools used for creating data insights and visualization: pandas, numpy, plotly
+
+Mainly used PyCharm and Jupyter Notebooks
