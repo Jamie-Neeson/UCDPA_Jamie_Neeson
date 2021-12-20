@@ -8,7 +8,6 @@ import plotly.graph_objects as go
 confirmed_cases_df = pd.read_csv('covid_confirmed_cases.csv')
 confirmed_deaths_df = pd.read_csv('confirmed_deaths.csv')
 
-
 # # Data Manipulation and Cleaning
 #dropping columns that I don't need
 confirmed_cases_df = confirmed_cases_df.drop(columns=['Lat', 'Long', 'Province/State'])
