@@ -88,5 +88,5 @@ fig4 = px.choropleth(total_confirmed_df,
 fig4.show()
 
 fig5 = px.scatter(total_death_df, x='Confirmed', y='Confirmed', color=total_death_df['Country/Region'],
-                  size='Confirmed', log_x=True, height=500, title='Total COVID 19 cases, all countries')
+                  size='Confirmed', log_x=True, height=500, title='Total COVID 19 Deaths, all countries')
 fig5.show()
