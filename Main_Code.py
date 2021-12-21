@@ -80,6 +80,7 @@ fig3.show()
 
 #same data visualized using matplotlib, comparing with fig3, plotly is a much better option 
 plt.scatter(x='Country/Region', y='Confirmed', data=confirmed_cases_melt_df, s=10)
+plt.show()
 
 fig4 = px.choropleth(total_confirmed_df, 
                      locations='Country/Region', locationmode='country names',
