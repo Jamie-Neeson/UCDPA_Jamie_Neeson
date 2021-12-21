@@ -65,13 +65,13 @@ total_confirmed = total_confirmed_df['Confirmed'].sum()
 total_confirmed
 
 #5 visualizations
-fig = px.bar(total_confirmed_df.sort_values('Confirmed', ascending=False).head(30)
-             , x='Country/Region', y='Confirmed', text='Confirmed', title='Total COVID 19 cases, all countries')
+fig = px.bar(total_confirmed_df.sort_values('Confirmed', ascending=False).head(10)
+             , x='Country/Region', y='Confirmed', text='Confirmed', title='Total COVID 19 cases, Top 10')
 fig.show()
 
 #same data visualized using matplotlib, comparing with fig3, plotly is a much better option 
 plt.scatter(x='Country/Region', y='Confirmed', data=confirmed_cases_melt_df, s=10)
-plt.show(30)
+plt.show(10)
 
 fig2 = px.scatter(confirmed_deaths_melt_df, x='Date', y='Confirmed', color='Country/Region', 
                   title='Increase in COVID 19 deaths by date, all countries')
