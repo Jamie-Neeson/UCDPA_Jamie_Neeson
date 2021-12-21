@@ -69,6 +69,10 @@ fig = px.bar(total_confirmed_df.sort_values('Confirmed', ascending=False).head(3
              , x='Country/Region', y='Confirmed', text='Confirmed', title='Total COVID 19 cases, all countries')
 fig.show()
 
+#same data visualized using matplotlib, comparing with fig3, plotly is a much better option 
+plt.scatter(x='Country/Region', y='Confirmed', data=confirmed_cases_melt_df, s=10)
+plt.show()
+
 fig2 = px.scatter(confirmed_deaths_melt_df, x='Date', y='Confirmed', color='Country/Region', 
                   title='Increase in COVID 19 deaths by date, all countries')
 fig2.show()
@@ -76,10 +80,6 @@ fig2.show()
 fig3 = px.line(confirmed_cases_melt_df[confirmed_cases_melt_df['Country/Region'] == 'Ireland'], 
                x='Date', y='Confirmed', title='Increase in COVID 19 cases by date, individual country')
 fig3.show()
-
-#same data visualized using matplotlib, comparing with fig3, plotly is a much better option 
-plt.scatter(x='Country/Region', y='Confirmed', data=confirmed_cases_melt_df, s=10)
-plt.show()
 
 fig4 = px.choropleth(total_confirmed_df, 
                      locations='Country/Region', locationmode='country names',
