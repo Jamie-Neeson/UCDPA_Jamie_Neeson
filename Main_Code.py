@@ -58,7 +58,6 @@ total_active = total_confirmed - total_death
 total_active
 
 #Data Visualization
-#create a new df
 total_confirmed_df = confirmed_cases_melt_df[confirmed_cases_melt_df['Date'] == max_date]
 total_confirmed_df
 
