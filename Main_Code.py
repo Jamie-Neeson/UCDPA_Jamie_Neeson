@@ -77,8 +77,8 @@ fig2 = px.scatter(confirmed_deaths_melt_df, x='Date', y='Confirmed', color='Coun
                   title='Increase in COVID 19 deaths by date, all countries')
 fig2.show()
 
-fig3 = px.line(confirmed_cases_melt_df[confirmed_cases_melt_df['Country/Region'] == 'Ireland'], 
-               x='Date', y='Confirmed', title='Increase in COVID 19 cases by date, individual country')
+fig3 = px.line(confirmed_deaths_melt_df[confirmed_deaths_melt_df['Country/Region'] == 'Ireland'], 
+               x='Date', y='Confirmed', title='Increase in COVID 19 deaths by date, Ireland')
 fig3.show()
 
 fig4 = px.choropleth(total_confirmed_df, 
