@@ -71,7 +71,7 @@ fig.show()
 
 #same data visualized using matplotlib, comparing with fig3, plotly is a much better option 
 plt.scatter(x='Country/Region', y='Confirmed', data=confirmed_cases_melt_df, s=10)
-plt.show()
+plt.show(30)
 
 fig2 = px.scatter(confirmed_deaths_melt_df, x='Date', y='Confirmed', color='Country/Region', 
                   title='Increase in COVID 19 deaths by date, all countries')
